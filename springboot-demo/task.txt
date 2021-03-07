@@ -1,0 +1,9 @@
+SpringBoot 创建步骤
+
+1.1、创建Maven依赖
+1.2、添加依赖：父工程+web依赖
+1.3、发布工程：run
+1.3、编写controller
+
+2.1、可以通过脚手架创建：start.spring.io  start.alibaba.com
+2.2、controller 默认扫描的包，在当前启动的包以及子包下（规范大于配置）
