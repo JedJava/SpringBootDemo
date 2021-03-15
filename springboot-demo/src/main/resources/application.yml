@@ -1,0 +1,23 @@
+server:
+  servlet:
+    context-path: /demo #配置上下文 （默认增加的访问路径）
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/springboot?
+    useUnicode: true&characterEncoding=UTF-8&serverTimezone=UTC
+
+    username: root
+    data-password: root
+mybatis:
+  type-aliases-package: com.xujie.pojo #mybatis 别名
+
+  mapper-locations: classpath:mapper/*.xml #加载映射文件
+
+logging:
+  level:
+    com:
+      itheima: debug

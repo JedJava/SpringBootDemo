@@ -1,9 +1,20 @@
 SpringBoot 创建步骤
 
 1.1、创建Maven依赖
-1.2、添加依赖：父工程+web依赖
+1.2、添加依赖：parent工程+web依赖
 1.3、发布工程：run
 1.3、编写controller
 
 2.1、可以通过脚手架创建：start.spring.io  start.alibaba.com
 2.2、controller 默认扫描的包，在当前启动的包以及子包下（规范大于配置）
+
+3.1 springboot配置文件：application.yml（推荐）/properties(优先级高)
+3.2 获取配置文件的值：
+    @value("${key}")
+    @Autowired  private Environment env
+    @ConfigurationProperties(批量映射到pojo）
+
+4.1 springboot 集成中间件、框架
+4.2 mybatis：mybatis依赖 数据库驱动依赖
+    controller + service + dao + (映射文件) + pojo
+4.3
