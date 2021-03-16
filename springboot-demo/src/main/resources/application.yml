@@ -7,11 +7,10 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost/springboot?
-    useUnicode: true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
 
     username: root
-    data-password: root
+    password: root
 mybatis:
   type-aliases-package: com.xujie.pojo #mybatis 别名
 
